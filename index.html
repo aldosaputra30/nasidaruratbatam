@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nasi Darurat Batam — Bantuan Pangan Darurat dari Donasi Warga</title>
+<meta name="description" content="Nasi Darurat Batam menyalurkan nasi bungkus darurat dari hasil donasi masyarakat kepada warga Batam yang sedang kesulitan. Lihat visi, misi, dan kegiatan kami.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- favicon sederhana: nasi bungkus, dibuat dari SVG langsung -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316281d'/%3E%3Cpath d='M16 6c6 3 9 8 9 13a9 9 0 0 1-18 0c0-5 3-10 9-13z' fill='%23d79a3a'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<a href="#konten" class="visually-hidden">Lompat ke konten utama</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap">
+    <a href="#" class="brand">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M16 4c7 3.6 10.5 9.4 10.5 15A10.5 10.5 0 0 1 5.5 19C5.5 13.4 9 7.6 16 4z" fill="#16281d"/>
+        <path d="M16 4c7 3.6 10.5 9.4 10.5 15a10.4 10.4 0 0 1-.7 3.8C22.6 16 19.6 9 16 4z" fill="#3c6b46"/>
+        <path d="M16 4c-1.6 3.6-1.6 15.6 0 21" stroke="#d79a3a" stroke-width="1.1" stroke-linecap="round"/>
+      </svg>
+      Nasi Darurat Batam
+    </a>
+    <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#visi-misi">Visi &amp; Misi</a></li>
+      <li><a href="#kegiatan">Kegiatan</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#bantu">Cara Membantu</a></li>
+      <li><a href="#kontak" class="nav-cta">Donasi Sekarang</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="konten">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow hero-eyebrow">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2c5 2.7 7.5 6.9 7.5 11A7.5 7.5 0 0 1 4.5 13c0-4.1 2.5-8.3 7.5-11z" fill="currentColor"/></svg>
+          Gerakan pangan darurat berbasis donasi warga
+        </span>
+        <h1>Selagi Batam<br>masih lapar,<br><em>dapur kami tetap menyala.</em></h1>
+        <p class="lede">Nasi Darurat Batam menyalurkan nasi bungkus siap makan kepada warga yang sedang dalam kondisi mendesak — hasil donasi tetangga, komunitas, dan pelaku usaha di Batam sendiri.</p>
+        <div class="hero-actions">
+          <a href="#bantu" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.6-10-9.3C.5 8 2.3 4 6.3 4c2.2 0 3.9 1.3 5.7 3.4C13.8 5.3 15.5 4 17.7 4c4 0 5.8 4 4.3 7.7C19.5 16.4 12 21 12 21z" fill="currentColor"/></svg>
+            Bantu Sekarang
+          </a>
+          <a href="#kegiatan" class="btn btn-ghost">Lihat kegiatan kami</a>
+        </div>
+      </div>
+
+      <!-- signature element: kupon/receipt-style stat ticket -->
+      <div class="ticket reveal">
+        <div class="ticket-head">
+          <span>Kupon Nasi Darurat</span>
+          <span>#BATAM</span>
+        </div>
+        <div class="ticket-rows">
+          <div class="ticket-row">
+            <span class="num" data-count="4820" data-suffix="+">0</span>
+            <span class="label">porsi nasi telah dibagikan <!-- GANTI: angka contoh, isi data asli --></span>
+          </div>
+          <div class="ticket-row">
+            <span class="num" data-count="12" data-suffix="">0</span>
+            <span class="label">dapur siaga aktif di Batam <!-- GANTI: angka contoh --></span>
+          </div>
+          <div class="ticket-row">
+            <span class="num" data-count="86" data-suffix="">0</span>
+            <span class="label">relawan yang turun tangan <!-- GANTI: angka contoh --></span>
+          </div>
+        </div>
+        <div class="ticket-foot">TERIMA KASIH SUDAH PEDULI · SEJAK 2023</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TENTANG ============ -->
+  <section class="tentang" id="tentang">
+    <div class="wrap">
+      <div class="grid">
+        <div class="bungkus-art reveal">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M40 70c0-22 27-40 60-40s60 18 60 40v50c0 22-27 40-60 40s-60-18-60-40V70z" fill="#3c6b46"/>
+            <path d="M40 70c0-22 27-40 60-40 8 0 15.6 1.1 22.5 3.1C97 38 79 46 66 62c-13 16-19 34-19 48-4.3-4.6-7-10.6-7-17V70z" fill="#7fa688" opacity="0.55"/>
+            <rect x="94" y="24" width="12" height="150" rx="6" fill="#d79a3a"/>
+            <path d="M64 76c8-6 20-9 36-9s28 3 36 9" stroke="#16281d" stroke-width="2.4" stroke-linecap="round" opacity="0.35"/>
+          </svg>
+        </div>
+        <div class="tentang-copy reveal">
+          <span class="eyebrow">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2c5 2.7 7.5 6.9 7.5 11A7.5 7.5 0 0 1 4.5 13c0-4.1 2.5-8.3 7.5-11z" fill="currentColor"/></svg>
+            Tentang Kami
+          </span>
+          <h2>Bukan panti, bukan katering — kami dapur siaga.</h2>
+          <p>Nasi Darurat Batam lahir dari keresahan sederhana: masih banyak warga Batam yang kesulitan makan layak justru di saat paling genting — pasca kebakaran, keluarga yang menunggu di rumah sakit, pekerja harian yang tiba-tiba kehilangan penghasilan, hingga korban banjir rob di kawasan pesisir.</p>
+          <p>Kami bukan lembaga besar. Kami adalah kumpulan warga, pemilik warung, dan relawan yang percaya bahwa <strong>sepiring nasi hangat yang datang tepat waktu</strong> bisa jadi penopang paling penting di hari tersulit seseorang.</p>
+          <p>Semua nasi yang kami bagikan berasal dari donasi — baik berupa uang, beras, lauk, maupun tenaga masak dan antar dari warga Batam sendiri.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISI & MISI ============ -->
+  <section class="visimisi" id="visi-misi">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2c5 2.7 7.5 6.9 7.5 11A7.5 7.5 0 0 1 4.5 13c0-4.1 2.5-8.3 7.5-11z" fill="currentColor"/></svg>
+          Arah Gerakan
+        </span>
+        <h2>Visi &amp; Misi</h2>
+      </div>
+      <div class="vm-grid">
+        <div class="visi-card reveal">
+          <span class="eyebrow">Visi</span>
+          <p>Batam bebas dari lapar darurat — setiap warga yang sedang kesulitan mendapat sepiring nasi hangat tanpa harus menunggu esok hari.</p>
+        </div>
+        <ul class="misi-list reveal">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <h3>Menyediakan nasi bungkus darurat</h3>
+              <p>Untuk warga dalam kondisi mendesak: bencana, sakit, kehilangan pekerjaan, atau kejadian tak terduga lainnya.</p>
+            </div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <h3>Menggalang donasi secara transparan</h3>
+              <p>Dari masyarakat, komunitas, dan pelaku usaha di Batam, dengan laporan penyaluran yang bisa dipantau publik.</p>
+            </div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <h3>Membangun jaringan dapur siaga</h3>
+              <p>Dapur umum lintas kelurahan yang siap bergerak cepat kapan pun bantuan dibutuhkan.</p>
+            </div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <h3>Melibatkan relawan lokal</h3>
+              <p>Agar bantuan sampai tepat waktu, tepat sasaran, dan tetap dekat dengan warga yang membutuhkan.</p>
+            </div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <h3>Menumbuhkan budaya gotong royong pangan</h3>
+              <p>Mengajak lebih banyak warga Batam peduli dan ikut bergerak, sekecil apa pun kontribusinya.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KEGIATAN / TIMELINE ============ -->
+  <section class="riwayat" id="kegiatan">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2c5 2.7 7.5 6.9 7.5 11A7.5 7.5 0 0 1 4.5 13c0-4.1 2.5-8.3 7.5-11z" fill="currentColor"/></svg>
+          Perjalanan Kami
+        </span>
+        <h2>Apa saja yang sudah kami lakukan</h2>
+        <p>Sebagian jejak kegiatan Nasi Darurat Batam sejak pertama kali dapur ini menyala. <!-- GANTI: seluruh isi timeline berikut contoh, sesuaikan dengan riwayat kegiatan asli --></p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-year">2023</div>
+          <div>
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <h3>Dapur pertama menyala di Sagulung</h3>
+              <p>Bermula dari satu rumah relawan yang memasak untuk 30 keluarga terdampak kebakaran permukiman. Dari sinilah nama "Nasi Darurat Batam" pertama kali dipakai.</p>
+              <span class="tl-stat">± 300 porsi tersalur</span>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-year">2024</div>
+          <div>
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <h3>Respons banjir rob di kawasan pesisir</h3>
+              <p>Membuka dapur siaga selama 2 minggu untuk warga pesisir yang rumahnya terendam, bekerja sama dengan pengurus RT/RW setempat.</p>
+              <span class="tl-stat">± 1.100 porsi tersalur</span>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-year">2024</div>
+          <div>
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <h3>Program "Nasi untuk Keluarga di Rumah Sakit"</h3>
+              <p>Membagikan nasi bungkus rutin setiap sore kepada keluarga pasien yang menunggu di beberapa rumah sakit di Batam.</p>
+              <span class="tl-stat">Berjalan setiap hari</span>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-year">2025</div>
+          <div>
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <h3>Jaringan dapur siaga bertambah jadi 12 titik</h3>
+              <p>Dapur siaga kini tersebar di beberapa kecamatan di Batam, didukung relawan pengantar dengan sepeda motor agar bantuan lebih cepat sampai.</p>
+              <span class="tl-stat">12 dapur aktif</span>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-year">2026</div>
+          <div>
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <h3>Membuka jalur donasi terbuka untuk publik</h3>
+              <p>Meluncurkan halaman ini agar lebih banyak warga dan pelaku usaha di Batam bisa ikut berdonasi atau menjadi relawan secara langsung.</p>
+              <span class="tl-stat">Kamu di sini sekarang</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERI ============ -->
+  <section class="galeri" id="galeri">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2c5 2.7 7.5 6.9 7.5 11A7.5 7.5 0 0 1 4.5 13c0-4.1 2.5-8.3 7.5-11z" fill="currentColor"/></svg>
+          Galeri Kegiatan
+        </span>
+        <h2>Dari dapur ke tangan warga Batam</h2>
+        <p>Dokumentasi kegiatan memasak, mengemas, dan menyalurkan nasi darurat kepada warga.</p>
+      </div>
+
+      <!-- GANTI: kartu di bawah masih pakai pola warna sebagai pengganti foto.
+           Ganti div.galeri-media.placeholder dengan <img src="assets/galeri/nama-file.jpg" alt="..."> -->
+      <div class="galeri-grid">
+        <figure class="galeri-item wide reveal">
+          <div class="galeri-media placeholder" style="--gmcolor:#3c6b46"></div>
+          <figcaption class="galeri-tag"><span>Memasak bersama relawan</span><span>Dapur Sagulung</span></figcaption>
+        </figure>
+        <figure class="galeri-item tall reveal">
+          <div class="galeri-media placeholder" style="--gmcolor:#c1432b"></div>
+          <figcaption class="galeri-tag"><span>Mengemas nasi bungkus</span><span>Malam siaga</span></figcaption>
+        </figure>
+        <figure class="galeri-item reveal">
+          <div class="galeri-media placeholder" style="--gmcolor:#d79a3a"></div>
+          <figcaption class="galeri-tag"><span>Penyaluran ke RS</span><span>Rutin sore</span></figcaption>
+        </figure>
+        <figure class="galeri-item reveal">
+          <div class="galeri-media placeholder" style="--gmcolor:#7fa688"></div>
+          <figcaption class="galeri-tag"><span>Bantuan banjir rob</span><span>Kawasan pesisir</span></figcaption>
+        </figure>
+        <figure class="galeri-item wide reveal">
+          <div class="galeri-media placeholder" style="--gmcolor:#24402c"></div>
+          <figcaption class="galeri-tag"><span>Relawan pengantar</span><span>Armada motor</span></figcaption>
+        </figure>
+        <figure class="galeri-item reveal">
+          <div class="galeri-media placeholder" style="--gmcolor:#9a3421"></div>
+          <figcaption class="galeri-tag"><span>Titik dapur baru</span><span>Ekspansi 2025</span></figcaption>
+        </figure>
+        <figure class="galeri-item reveal">
+          <div class="galeri-media placeholder" style="--gmcolor:#3c6b46"></div>
+          <figcaption class="galeri-tag"><span>Donasi beras warga</span><span>Kumpul mingguan</span></figcaption>
+        </figure>
+      </div>
+      <p class="galeri-note">* Gambar di atas adalah placeholder — ganti dengan foto kegiatan asli sebelum dipublikasikan.</p>
+    </div>
+  </section>
+
+  <!-- ============ CARA MEMBANTU ============ -->
+  <section class="bantu" id="bantu">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2c5 2.7 7.5 6.9 7.5 11A7.5 7.5 0 0 1 4.5 13c0-4.1 2.5-8.3 7.5-11z" fill="currentColor"/></svg>
+          Ikut Bergerak
+        </span>
+        <h2>Cara membantu</h2>
+        <p>Setiap bentuk bantuan, sekecil apa pun, langsung menjadi porsi nasi berikutnya yang tersalur.</p>
+      </div>
+      <div class="bantu-grid">
+        <div class="bantu-card reveal">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.6-10-9.3C.5 8 2.3 4 6.3 4c2.2 0 3.9 1.3 5.7 3.4C13.8 5.3 15.5 4 17.7 4c4 0 5.8 4 4.3 7.7C19.5 16.4 12 21 12 21z" fill="currentColor"/></svg>
+          <h3>Donasi uang</h3>
+          <p>Setiap Rp15.000 setara dengan satu porsi nasi bungkus siap antar. Transfer bisa lewat rekening atau e-wallet resmi kami.</p>
+          <!-- GANTI: nomor rekening/e-wallet asli -->
+          <a href="#kontak" class="btn btn-primary">Lihat rekening donasi</a>
+        </div>
+        <div class="bantu-card reveal">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 20l4-4M20 4l-4 4M9 4a5 5 0 0 1 5 5v0M4 9a5 5 0 0 1 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M13 20a5 5 0 0 0 5-5v0M20 15a5 5 0 0 0-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3>Donasi beras &amp; lauk</h3>
+          <p>Beras, minyak, telur, atau bahan pokok lain bisa diantar langsung ke dapur siaga terdekat, atau kami jemput untuk donasi dalam jumlah besar.</p>
+          <a href="#kontak" class="btn btn-primary">Hubungi dapur terdekat</a>
+        </div>
+        <div class="bantu-card reveal">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="2"/><path d="M4.5 20c1.4-4 4-6 7.5-6s6.1 2 7.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3>Jadi relawan</h3>
+          <p>Bantu memasak, mengemas, atau mengantar nasi ke warga yang membutuhkan. Fleksibel — sesuai waktu luang yang kamu punya.</p>
+          <a href="#kontak" class="btn btn-primary">Daftar jadi relawan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAK / FOOTER ============ -->
+  <footer class="kontak" id="kontak">
+    <div class="wrap">
+      <div class="kontak-grid">
+        <div>
+          <h2>Mari bergerak bersama.</h2>
+          <p>Satu porsi nasi mungkin terasa kecil — tapi tepat waktu, bisa jadi segalanya bagi yang menerimanya. Hubungi kami untuk berdonasi, jadi relawan, atau sekadar bertanya.</p>
+        </div>
+        <div class="kontak-col">
+          <h4>Hubungi Kami</h4>
+          <!-- GANTI: seluruh kontak berikut dengan data asli organisasi -->
+          <ul>
+            <li><a href="https://wa.me/6280000000000">WhatsApp: 0800-0000-000</a></li>
+            <li><a href="mailto:halo@nasidaruratbatam.org">halo@nasidaruratbatam.org</a></li>
+            <li><a href="#">Instagram @nasidaruratbatam</a></li>
+          </ul>
+        </div>
+        <div class="kontak-col">
+          <h4>Jelajah</h4>
+          <ul>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#visi-misi">Visi &amp; Misi</a></li>
+            <li><a href="#kegiatan">Kegiatan</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="tahun"></span> Nasi Darurat Batam. Gerakan sosial berbasis donasi warga.</span>
+        <span>Dibuat dengan gotong royong, bukan sponsor.</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
